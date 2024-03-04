@@ -1,0 +1,152 @@
+@media (max-width: 1439px) {
+    .pc-v {
+        display: none;
+    }
+    .mob-v {
+        display: initial;
+    }
+
+    .out-header {
+        top: 0px;
+        background-color: white;
+        position: fixed;
+        width: 100vw;
+        z-index: 499;
+    }
+    .header {
+        height: 56px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    .menu-mob {
+        font-size: 24px;
+        font-family: 'Gilroy';
+        line-height: 40px;
+        background-color: white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        z-index: 490;
+        position: relative;
+        padding-top: 32px;
+        border-radius: 20px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .row-img-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+        z-index: 500;
+    }
+    .app-burger {
+        height: 32px;
+        width: 32px;
+        margin-right: 18px;
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+    .menu-mob-component {
+        margin-right: 48px;
+        margin-left: 16px;
+        position: relative;
+        width: fit-content;
+    }
+    .menu-mob-component::after {
+        content: '';
+        display: inline-block;
+        width: 0%;
+        height: 2px;
+        background-color: #3A3A3A;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        opacity: 0;
+    }
+    .menu-mob-component:hover::after {
+        opacity: 1;
+        transition-duration: 0.3s;
+        width: 100%;
+    }
+    .menu-mob-component a:hover {
+        font-weight: 600;
+    }
+    .ru-en {
+        padding-bottom: 60px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #3A3A3A;
+    }
+    .logo {
+        background-image: url(../../../../assets/images/Logo_ITS.svg);
+        height: 36px;
+        width: 22px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+}
+
+@block-width: 100%;
+@block-height: @block-width;
+@line-width: @block-width;
+@line-height: calc(@block-width/2);
+@background-color: black;
+
+.block {
+    width: @block-width;
+    height: @block-height;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+#line() {
+    width: @line-width;
+    height: calc(@line-height/5);
+    margin: calc(@line-width/10) 0;
+    background-color: @background-color;
+    border-radius: 100px;
+}
+.line1, .line2, .line3 {
+    #line();
+}
+hr {
+    border: 1px solid #EEEEEE;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.round {
+    width: 32px;
+    height: 32px;
+    background-color: #0003FB;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tel {
+    width: 15.75px;
+    height: 15.75px;
+    background-image: url(../../../../assets/images/tel.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.tel-blue {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../../assets/images/tel-blue.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

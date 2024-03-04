@@ -1,0 +1,57 @@
+<div class="out-header">
+    <div class="header">
+        <div class="row-img-group">
+            <a href="#main">
+                <div class="logo"></div>
+            </a>
+            <div style="display: flex; align-items: self-end; justify-content: space-between;">
+                <a href="tel:8 (800) 550 08 55" [@menuclick]="menuClicked ? 'none' : 'display'">
+                    <div class="round"><div class="tel"></div></div>
+                </a>
+                <div (click)="menuShowHide()" class="app-burger">
+                    <div class="block">
+                        <div class="line1" [@line1]="menuClicked ? 'cross' : ''"></div>
+                        <div class="line2" [@line2]="menuClicked ? 'cross' : ''"></div>
+                        <div class="line3" [@line3]="menuClicked ? 'cross' : ''"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mob" [@menuclick]="menuClicked ? 'expand' : 'collapse'">
+            <div style="padding-top: 24px;">
+                <hr>
+                <div class="menu-mob-component"><a (click)="menuShowHide()" href="#about">О компании</a></div>
+                <hr>
+                <div class="menu-mob-component"><a (click)="menuShowHide()" href="#our-team">Наша команда</a></div>
+                <hr>
+                <div class="menu-mob-component"><a (click)="menuShowHide()" href="#group">Группа предпринимателей</a></div>
+                <hr>
+                <div class="menu-mob-component"><a (click)="menuShowHide()" href="#contacts">Контакты</a></div>
+                <hr>
+                <div style="margin-left: 16px;">
+                    <a href="tel:8 (800) 550 08 55" style="display: flex; align-items: center;">
+                        <div class="tel-blue"></div>
+                        <div style="font-family: Gilroy;
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 39px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #002ED0;
+                        margin-left: 12px;
+                        ">8 (800) 550 08 55</div>
+                    </a>
+                    <div style="font-family: Gilroy;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color:#151D28;
+                    ">Звоните в любое время</div>
+                </div>
+                <div class="menu-mob-component ru-en row"></div>
+            </div>
+        </div>
+    </div>
+</div>
