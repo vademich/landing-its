@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MobileComponent } from './components/header/mobile/mobile.component';
 import { MonitorComponent } from './components/header/monitor/monitor.component';
 import { MainComponent } from './components/main/main.component';
+import { TruckComponent } from './components/truck/truck.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MainComponent } from './components/main/main.component';
     HeaderComponent,
     MobileComponent,
     MonitorComponent,
-    MainComponent
+    MainComponent,
+    TruckComponent
   ],
   imports: [
     BrowserModule,

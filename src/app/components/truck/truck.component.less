@@ -1,0 +1,130 @@
+.screen {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #FBFBFD;
+}
+.content {
+    padding: 0 16px;
+    padding-top: 24px;
+    max-width: 1328px;
+    width: calc(100% - 32px);
+    padding-bottom: 32px;
+}
+.title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #002ED0;
+}
+.word {
+    font-family: Gilroy;
+    font-size: 24px;
+    color: #CED0E2;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 0 10px;
+}
+.block {
+    margin-top: 30px;
+    max-width: 620px;
+}
+.text {
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A3A3A;
+}
+.commas::after {
+    content: '';
+    display: flex;
+    background-color: #002ED0;
+    margin-bottom: 8px;
+    height: 1px;
+    width: calc(100% - 16px);
+    margin-left: 16px;
+    position: relative;
+    bottom: 8px;
+}
+.car-wrap {
+    width: 100%;
+    max-width: 1328px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: -16px;
+}
+.car {
+    width: 442px;
+    height: 231px;
+    min-width: 442px;
+    min-height: 231px;
+    background-image: url(../../../assets/images/truck/truck.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 4px);
+}
+
+@media (max-width: 1439px) {
+    .monitor {
+        display: none;
+    }
+}
+@media (min-width: 1440px) {
+    .mobile {
+        display: none;
+    }
+    .content {
+        padding-top: 140px;
+    }
+    .title {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+    .commas::after {
+        margin-left: 32px;
+    }
+    .text {
+        margin-left: 32px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .word {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .car-wrap {
+        justify-content: right;
+        width: 100%;
+        max-width: 1460px;
+        overflow: hidden;
+        display: flex;
+    }
+    .car {
+        width: 1030px;
+        height: 537px;
+        background-position: 300px;
+        transition-duration: 0.7s;
+    }
+    .light {
+        width: 1030px;
+        height: 537px;
+        background-image: url(../../../assets/images/truck/light.png);
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: 300px 175px;
+        opacity: 0;
+        transition-duration: 0.7s;
+    }
+    .light:hover {
+        opacity: 1;
+    }
+}
