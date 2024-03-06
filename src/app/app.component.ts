@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'landing-its';
 
-  timerId = setInterval(() => this.changeProps(), 1000);
+  timerId = setInterval(() => this.tryMoveTruck(), 1000);
 
   ngOnInit() {
     this.timerId;
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   element: any;
   rect: any;
-  changeProps() {
+  tryMoveTruck() {
     this.element = document.getElementById('truck');
     this.rect = this.element?.getBoundingClientRect();
    
