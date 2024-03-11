@@ -86,10 +86,7 @@ export class Slider3Component {
     } else if (this.move1) {
       this.move1 = false;
       this.move2 = true;
-    } else if (this.move2) {
-      this.move2 = false;
-      this.move = true;
-    } 
+    }
   }
   moveL() {
     if (this.move2) {
