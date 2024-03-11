@@ -1,0 +1,21 @@
+<div class="screen-content">
+    <div class="container">
+        <div class="wrap">
+            <div class="frames" [@trigger-move-frames]="move ? 'state-0' : (move1 ? 'state-1' : (move2 ? 'state-2' : (move3 ? 'state-3' : 'state-4')))">
+                <div class="person" *ngFor="let person of people">
+                    <div class="frame" style="background-image: url(../../../../assets/images/persons/{{person.id}}.png);"></div>
+                    <div class="info">
+                        <div class="name">{{person.name}}</div>
+                        <div class="position">{{person.position}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <div class="arrows" (mouseenter)="showHideArrows()" (mouseleave)="showHideArrows()">
+            <div class="arrow-left" (click)="moveL()" [@arrows-hover]="arrowsHover&&!move ? 'show' : 'hide-left-arrow'"></div>
+            <div class="arrow-right" (click)="moveR()" [@arrows-hover]="arrowsHover&&!move4 ? 'show' : 'hide-right-arrow'"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,137 @@
+.screen {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #FBFBFD;
+}
+.content {
+    width: calc(100% - 32px);
+    max-width: 1328px;
+    padding-bottom: 64px;
+}
+.title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #002ED0;
+    margin-top: 28px;
+    width: 100px;
+}
+.team {
+    width: 113px;
+    height: 55px;
+    background-image: url(../../../assets/images/team.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 24px;
+}
+.block {
+    margin-top: 30px;
+    max-width: 620px;
+}
+.text {
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A3A3A;
+}
+.commas::after {
+    content: '';
+    display: flex;
+    background-color: #002ED0;
+    margin-bottom: 8px;
+    height: 1px;
+    width: calc(100% - 16px);
+    margin-left: 16px;
+    position: relative;
+    bottom: 8px;
+}
+
+
+
+
+
+@media (max-width: 1439px) {
+    .monitor {
+        display: none;
+    }
+}
+@media (min-width: 1440px) {
+    .mobile {
+        display: none;
+    }
+    .content {
+        padding-bottom: 80px;
+    }
+    .title {
+        margin-top: 54px;
+        width: 198px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+    .team {
+        width: 200px;
+        height: 110px;
+    }
+    .commas::after {
+        margin-left: 32px;
+    }
+    .text {
+        margin-left: 32px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+@media (max-width: 695px) {
+    .length4 {
+        display: none;
+    }
+    .length3 {
+        display: none;
+    }
+    .length2 {
+        display: none;
+    }
+}
+@media (min-width: 696px) and (max-width: 1032px) {
+    .length4 {
+        display: none;
+    }
+    .length3 {
+        display: none;
+    }
+    .length1 {
+        display: none;
+    }
+}
+@media (min-width: 1033px) and (max-width: 1439px) {
+    .length4 {
+        display: none;
+    }
+    .length2 {
+        display: none;
+    }
+    .length1 {
+        display: none;
+    }
+}
+@media (min-width: 1440px) {
+    .length3 {
+        display: none;
+    }
+    .length2 {
+        display: none;
+    }
+    .length1 {
+        display: none;
+    }
+}
