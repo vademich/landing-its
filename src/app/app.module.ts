@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +21,7 @@ import { Slider2Component } from './components/team/slider-2/slider-2.component'
 import { Slider3Component } from './components/team/slider-3/slider-3.component';
 import { Slider4Component } from './components/team/slider-4/slider-4.component';
 import { GroupComponent } from './components/group/group.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +37,16 @@ import { GroupComponent } from './components/group/group.component';
     Slider2Component,
     Slider3Component,
     Slider4Component,
-    GroupComponent
+    GroupComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [
     provideAnimationsAsync()

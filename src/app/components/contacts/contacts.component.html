@@ -1,0 +1,65 @@
+<div class="screen">
+    <div class="content">
+        <div class="title">Контакты</div>
+        <div class="wrap">
+          <div class="container">
+            <div class="block">
+              <div class="info">
+                  <span><div class="address"></div>{{address}}</span>
+                  <span><div class="tel"></div>{{tel}}</span>
+                  <span><div class="mail"></div>{{mail}}</span>
+              </div>
+            </div>
+            <div>
+              <!-- <div class="text">{{text}}</div> -->
+              <form>
+                  <div class="name">
+                    <mat-form-field>
+                      <input matInput [formControl]="nameFormControl" [errorStateMatcher]="matcher"
+                            placeholder="Ваше имя">
+                      <mat-error *ngIf="!nameFormControl.hasError('required')">
+                        Пожалуйста введите <strong>корректные данные</strong>
+                      </mat-error>
+                      <mat-error *ngIf="nameFormControl.hasError('required')">
+                        Введите ваше <strong>имя</strong>
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+
+                  <div class="phone-email">
+                    <mat-form-field>
+                      <input matInput [formControl]="telFormControl" [errorStateMatcher]="matcher"
+                            placeholder="Телефон">
+                      <mat-error *ngIf="!telFormControl.hasError('required')">
+                        Пожалуйста введите <strong>корректные данные</strong>
+                      </mat-error>
+                      <mat-error *ngIf="telFormControl.hasError('required')">
+                        Введите <strong>номер телефона</strong>
+                      </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                      <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                            placeholder="E-mail">
+                      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Пожалуйста введите <strong>корректные данные</strong>
+                      </mat-error>
+                      <mat-error *ngIf="emailFormControl.hasError('required')">
+                        Введите <strong>e-mail</strong>
+                      </mat-error>
+                    </mat-form-field>
+
+                    <div class="btn">Отправить</div>
+
+                  </div>
+
+              </form>
+            </div>
+            <div class="map monitor" style="opacity: 0;"></div>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="screen mobile">
+  <div class="map"></div>
+</div>
