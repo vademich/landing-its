@@ -16,6 +16,7 @@ import { Slider1Component } from './components/team/slider-1/slider-1.component'
 import { Slider2Component } from './components/team/slider-2/slider-2.component';
 import { Slider3Component } from './components/team/slider-3/slider-3.component';
 import { Slider4Component } from './components/team/slider-4/slider-4.component';
+import { GroupComponent } from './components/group/group.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Slider4Component } from './components/team/slider-4/slider-4.component'
     Slider1Component,
     Slider2Component,
     Slider3Component,
-    Slider4Component
+    Slider4Component,
+    GroupComponent
   ],
   imports: [
     BrowserModule,
