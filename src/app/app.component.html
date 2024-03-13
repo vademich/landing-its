@@ -1,8 +1,10 @@
-<app-header></app-header>
-<app-main id="main"></app-main>
-<app-truck id="about"></app-truck>
-<app-geography id="geography"></app-geography>
-<app-team id="our-team"></app-team>
-<app-group id="group"></app-group>
-<app-contacts id="contacts"></app-contacts>
-<app-footer></app-footer>
+<div (click)="checkVisibility()" (wheel)="checkVisibility()" (scroll)="checkVisibility()">
+    <app-header></app-header>
+    <app-main id="main"></app-main>
+    <app-truck id="about"></app-truck>
+    <app-geography id="geography"></app-geography>
+    <app-team id="our-team"></app-team>
+    <app-group id="group"></app-group>
+    <app-contacts id="contacts"></app-contacts>
+    <app-footer></app-footer>
+</div>
