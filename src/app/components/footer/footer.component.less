@@ -1,0 +1,115 @@
+.screen {
+    width: 100vw;
+    background-color: #F5F6FB;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    background-image: url(../../../assets/images/Logo_ITS.svg);
+    background-size: contain;
+}
+.text {
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A3A3A;
+    margin-bottom: 24px;
+}
+.google-play {
+    background: #FFFFFF url(../../../assets/images/buttons/google-play.svg);}
+.google-play:hover {
+    background: #002ED0 url(../../../assets/images/buttons/google-play-on.svg);}
+.app-store {
+    background: #FFFFFF url(../../../assets/images/buttons/app-store.svg);}
+.app-store:hover {
+    background: #002ED0 url(../../../assets/images/buttons/app-store-on.svg);}
+.huawei {
+    background: #FFFFFF url(../../../assets/images/buttons/huawei.svg);}
+.huawei:hover {
+    background: #002ED0 url(../../../assets/images/buttons/huawei-on.svg);}
+
+
+@media (max-width: 1439px) {
+    .monitor {
+        display: none;
+    }
+    .screen {
+        padding-bottom: 64px;
+    }
+    .logo {
+        width: 72px;
+        height: 121px;
+    }
+    .google-play, .app-store, .huawei {
+        width: 342px;
+        height: 54px;
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+        margin-bottom: 14px;
+    }
+    .google-play:hover, .app-store:hover, .huawei:hover {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .mobile {
+        display: none;
+    }
+    .screen {
+        padding-bottom: 80px;
+    }
+    .content {
+        width: calc(100% - 32px);
+        max-width: 1328px;
+    }
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: #E6E6E6;
+        margin-bottom: 56px;
+    }
+    .logo {
+        width: 45px;
+        height: 76px;
+    }
+    .buttons {
+        display: flex;
+    }
+    .google-play, .app-store, .huawei {
+        width: 172px;
+        height: 39px;
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+    }
+    .google-play, .app-store {
+        margin-right: 24px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .link {
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #3A3A3A;
+        width: 251px;
+        height: 22px;
+        display: inline-block;
+    }
+}

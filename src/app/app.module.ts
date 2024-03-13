@@ -22,6 +22,7 @@ import { Slider3Component } from './components/team/slider-3/slider-3.component'
 import { Slider4Component } from './components/team/slider-4/slider-4.component';
 import { GroupComponent } from './components/group/group.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     Slider3Component,
     Slider4Component,
     GroupComponent,
-    ContactsComponent
+    ContactsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
