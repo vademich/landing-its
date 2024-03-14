@@ -40,6 +40,13 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
         transform: 'scale(2.8) translateX(35px)'
       })
       )
+    ]),
+    trigger ('tile-more-details', [
+      state('hover',
+      style({
+
+    background: 'url("../../../assets/images/tiles/more-details-white.svg") center center no-repeat, rgba(58, 58, 58, 0.05)'
+      }))
     ])
   ],
   templateUrl: './group.component.html',

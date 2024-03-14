@@ -35,7 +35,7 @@
                     
                     <div class="picture" [@tile-picture]="tile.hover ? 'hover' : ''" style="background-image: url({{tile.picture}});"></div>
                     <div class="shadow" [@tile-shadow]="tile.hover ? 'hover' : ''"></div>
-                    <div class="more-details" *ngIf="tile.id != 'tile-1'"></div>
+                    <div class="more-details" [@tile-more-details]="tile.hover ? 'hover' : ''" *ngIf="tile.id != 'tile-1'"></div>
                     <div class="more-details" style="opacity: 0;cursor: auto;" *ngIf="tile.id == 'tile-1'"></div>
                     <div class="circle" [@tile-circle]="tile.hover ? 'hover' : ''" style="background-image: url({{tile.circleColor}});"></div>
                 </div>
